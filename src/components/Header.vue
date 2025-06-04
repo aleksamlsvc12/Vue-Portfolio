@@ -38,6 +38,7 @@
           <p class="hover:underline underline-offset-2 decoration-[2px]">{{page}}</p>
         </a>
         
+        <i class="pi pi-language text-black"></i>
         <img :src='languageIconWhite' alt="language" class="size-4 cursor-pointer block dark:hidden" @click = "saveLangInLS">
         <img :src='languageIconDark' alt="language" class="size-4 cursor-pointer hidden dark:block" @click = "saveLangInLS">
 
