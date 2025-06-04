@@ -1,10 +1,4 @@
 <script setup>
-  import languageIconWhite from '@/assets/icons/lang.svg';
-  import themeIconWhite from '@/assets/icons/dark-theme.svg';
-
-  import languageIconDark from '@/assets/icons/lang-white.svg';
-  import themeIconDark from '@/assets/icons/sun.svg';
-
   const emit = defineEmits(['langChange']);
 
   function toggleTheme(){
@@ -38,12 +32,8 @@
           <p class="hover:underline underline-offset-2 decoration-[2px]">{{page}}</p>
         </a>
         
-        <i class="pi pi-language text-black"></i>
-        <img :src='languageIconWhite' alt="language" class="size-4 cursor-pointer block dark:hidden" @click = "saveLangInLS">
-        <img :src='languageIconDark' alt="language" class="size-4 cursor-pointer hidden dark:block" @click = "saveLangInLS">
-
-        <img :src='themeIconWhite' alt="theme" class="size-4 cursor-pointer block dark:hidden" @click="toggleTheme">
-        <img :src='themeIconDark' alt="theme" class="size-4 cursor-pointer hidden dark:block" @click="toggleTheme">
+        <i class="pi pi-language text-black cursor-pointer dark:text-white" @click = "saveLangInLS"></i>
+        <i class="pi pi-moon text-black cursor-pointer dark:text-white" @click="toggleTheme"></i>
       </div>
     </div>
 </template>
