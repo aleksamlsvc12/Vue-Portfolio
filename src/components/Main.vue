@@ -1,5 +1,7 @@
 <script setup>
   import profileImage from '@/assets/images/profile.jpg'
+  import cvEng from '@/assets/docs/cv-aleksa-milosevic-english.pdf';
+  import cvSer from '@/assets/docs/cv-aleksa-milosevic-serbian.pdf';
 
   function downloadCvEng() {
     window.open(cvEng, '_blank');
