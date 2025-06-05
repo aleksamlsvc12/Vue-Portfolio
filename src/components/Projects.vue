@@ -1,64 +1,32 @@
 <script setup>
-  import cv from '@/assets/docs/cv-aleksa-milosevic-english.pdf';
-
-  function cvD() {
-    window.open(cv, '_blank');
-  }
+  defineProps({
+    data: Object,
+    lang: String
+  });
 </script>
 
 <template>
-  <div class="flex-grow p-8 grid grid-cols-3 gap-16 place-items-center">
-    <div class="border-solid shadow-md rounded-3xl shadow-gray-400 p-12 hover:scale-95 transition-all overflow-hidden cursor-pointer flex flex-col justify-center items-start h-7/8 w-4/5" @click="cvD">
-      <p class="mb-10 font-bold dark:text-white">Projekat</p>
+  <div class="flex-grow p-8 grid grid-cols-4 gap-16 place-items-center">
+    <div class="shadow-md rounded-[60px] shadow-gray-400 p-12 hover:scale-95 transition-all overflow-hidden cursor-pointer flex flex-col justify-center items-start w-full" 
+      v-for="(title, index) in data.titles" :key="index" @click="cvD">
+      <p class="mb-10 font-bold dark:text-white">{{title}}</p>
       <div class="flex justify-between w-full">
-        <span class="bg-yellow-400 text-sm text-white rounded-md border-black p-1.5">op</span>
-        <span class="bg-yellow-400 text-sm text-white rounded-md border-black p-1.5">op</span>
-        <span class="bg-yellow-400 text-sm text-white rounded-md border-black p-1.5">op</span>
-      </div>
-    </div>
+        <span 
+        :class="['text-sm text-white rounded-md p-1.5',
+        data[lang][title].difficulty === 'Beginner' || data[lang][title].difficulty === 'Početni nivo' ? 'beginner-button' : '',
+        data[lang][title].difficulty === 'Intermediate' || data[lang][title].difficulty === 'Srednji nivo' ? 'intermediate-button' : '',
+        data[lang][title].difficulty === 'Advanced' || data[lang][title].difficulty === 'Napredni nivo' ? 'advanced-button' : ''
+        ]">{{data[lang][title].difficulty}}</span>
 
-    <div class="border-solid shadow-md rounded-3xl shadow-gray-400 p-12 hover:scale-95 transition-all overflow-hidden cursor-pointer flex flex-col justify-center items-start h-7/8 w-4/5" @click="cvD">
-      <p class="mb-10 font-bold dark:text-white">Projekat</p>
-      <div class="flex justify-between w-full">
-        <span class="bg-yellow-400 text-sm text-white rounded-md border-black p-1.5">op</span>
-        <span class="bg-yellow-400 text-sm text-white rounded-md border-black p-1.5">op</span>
-        <span class="bg-yellow-400 text-sm text-white rounded-md border-black p-1.5">op</span>
-      </div>
-    </div>
+        <span 
+        :class="['text-sm text-white rounded-md p-1.5',
+        data[lang][title].completion === 'Completed' || data[lang][title].completion === 'Završeno' ? 'completed-button' : ''
+        ]">{{data[lang][title].completion}}</span>
 
-    <div class="border-solid shadow-md rounded-3xl shadow-gray-400 p-12 hover:scale-95 transition-all overflow-hidden cursor-pointer flex flex-col justify-center items-start h-7/8 w-4/5" @click="cvD">
-      <p class="mb-10 font-bold dark:text-white">Projekat</p>
-      <div class="flex justify-between w-full">
-        <span class="bg-yellow-400 text-sm text-white rounded-md border-black p-1.5">op</span>
-        <span class="bg-yellow-400 text-sm text-white rounded-md border-black p-1.5">op</span>
-        <span class="bg-yellow-400 text-sm text-white rounded-md border-black p-1.5">op</span>
-      </div>
-    </div>
-
-    <div class="border-solid shadow-md rounded-3xl shadow-gray-400 p-12 hover:scale-95 transition-all overflow-hidden cursor-pointer flex flex-col justify-center items-start h-7/8 w-4/5" @click="cvD">
-      <p class="mb-10 font-bold dark:text-white">Projekat</p>
-      <div class="flex justify-between w-full">
-        <span class="bg-yellow-400 text-sm text-white rounded-md border-black p-1.5">op</span>
-        <span class="bg-yellow-400 text-sm text-white rounded-md border-black p-1.5">op</span>
-        <span class="bg-yellow-400 text-sm text-white rounded-md border-black p-1.5">op</span>
-      </div>
-    </div>
-
-    <div class="border-solid shadow-md rounded-3xl shadow-gray-400 p-12 hover:scale-95 transition-all overflow-hidden cursor-pointer flex flex-col justify-center items-start h-7/8 w-4/5" @click="cvD">
-      <p class="mb-10 font-bold dark:text-white">Projekat</p>
-      <div class="flex justify-between w-full">
-        <span class="bg-yellow-400 text-sm text-white rounded-md border-black p-1.5">op</span>
-        <span class="bg-yellow-400 text-sm text-white rounded-md border-black p-1.5">op</span>
-        <span class="bg-yellow-400 text-sm text-white rounded-md border-black p-1.5">op</span>
-      </div>
-    </div>
-
-    <div class="border-solid shadow-md rounded-3xl shadow-gray-400 p-12 hover:scale-95 transition-all overflow-hidden cursor-pointer flex flex-col justify-center items-start h-7/8 w-4/5" @click="cvD">
-      <p class="mb-10 font-bold dark:text-white">Projekat</p>
-      <div class="flex justify-between w-full">
-        <span class="bg-yellow-400 text-sm text-white rounded-md border-black p-1.5">op</span>
-        <span class="bg-yellow-400 text-sm text-white rounded-md border-black p-1.5">op</span>
-        <span class="bg-yellow-400 text-sm text-white rounded-md border-black p-1.5">op</span>
+        <span
+        :class="['text-sm text-white rounded-md p-1.5',
+        data[lang][title].date !== '' ? 'date-button' : ''
+        ]">{{data[lang][title].date}}</span>
       </div>
     </div>
   </div>

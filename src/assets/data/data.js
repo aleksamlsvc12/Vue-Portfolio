@@ -24,6 +24,7 @@ const data =
     },
 
     projects: {
+      titles: ['YouTube','ToDoList','RevealCards','ProfileCard','Pagination','FotoGallery','FormValidation','Calculator'],
       english: {
         YouTube: {
             difficulty: 'Intermediate',
@@ -78,43 +79,43 @@ const data =
         YouTube: {
           difficulty: 'Srednji nivo',
           completion: 'Završeno',
-          date: '08/11/2024'
+          date: '8/11/2024'
         },
 
         ToDoList: {
           difficulty: 'Srednji nivo',
           completion: 'Završeno',
-          date: '04/04/2025'
+          date: '4/4/2025'
         },
 
         RevealCards: {
           difficulty: 'Početni nivo',
           completion: 'Završeno',
-          date: '31/03/2025'
+          date: '31/3/2025'
         },
 
         ProfileCard: {
           difficulty: 'Srednji nivo',
           completion: 'Završeno',
-          date: '09/04/2024'
+          date: '9/4/2024'
         },
 
         Pagination: {
           difficulty: 'Napredni nivo',
           completion: 'Završeno',
-          date: '08/04/2025'
+          date: '8/4/2025'
         },
 
         FotoGallery: {
           difficulty: 'Srednji nivo',
           completion: 'Završeno',
-          date: '04/04/2025'
+          date: '4/4/2025'
         },
 
         FormValidation: {
           difficulty: 'Srednji nivo',
           completion: 'Završeno',
-          date: '02/04/2025'
+          date: '2/4/2025'
         },
 
         Calculator: {

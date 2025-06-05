@@ -8,14 +8,14 @@
   }
 
   .intermediate-button{
-    background-color: yellow;
+    background-color: #ffea2a;
   }
 
   .beginner-button{
     background-color: lightgreen;
   }
 
-  .finished-button{
+  .completed-button{
     background-color: green;
   }
 

@@ -1,6 +1,5 @@
 <script setup>
   import Projects from '@/components/Projects.vue';
-import { data } from 'autoprefixer';
 
   defineProps({
     data: Object,

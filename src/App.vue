@@ -20,7 +20,7 @@
 
   const headerData = data.header;
   const mainData = data.main;
-  const projectsData = data.projects
+  const projectsData = data.projects;
 
   const route = useRoute();
   const currentData = computed(()=>{
