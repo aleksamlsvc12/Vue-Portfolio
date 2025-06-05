@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+  .advanced-button{
+    background-color: red;
+  }
+
+  .intermediate-button{
+    background-color: yellow;
+  }
+
+  .beginner-button{
+    background-color: lightgreen;
+  }
+
+  .finished-button{
+    background-color: green;
+  }
+
+  .date-button{
+    background-color: gray;
+  }
+}

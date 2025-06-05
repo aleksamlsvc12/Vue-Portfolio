@@ -1,4 +1,5 @@
 <script setup>
+  import { RouterLink } from 'vue-router';
   const emit = defineEmits(['langChange']);
 
   function toggleTheme(){
@@ -28,9 +29,9 @@
       </div>
       
       <div class="flex font-semibold text-sm items-center gap-6 dark:text-white">
-        <a v-for="(page, index) in data[lang]" :key="index" :href="data.links[index]">
+        <RouterLink v-for="(page, index) in data[lang]" :key="index" :to="data.links[index]">
           <p class="hover:underline underline-offset-2 decoration-[2px]">{{page}}</p>
-        </a>
+        </RouterLink>
         
         <i class="pi pi-language text-black cursor-pointer dark:text-white" @click = "saveLangInLS"></i>
         <i class="pi pi-moon text-black cursor-pointer dark:text-white" @click="toggleTheme"></i>

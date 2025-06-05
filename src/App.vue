@@ -1,11 +1,10 @@
 <script setup>
-  import { ref } from "vue";
-  import {RouterView} from 'vue-router';
+  import { ref, computed } from "vue";
+  import {RouterView, useRoute} from 'vue-router';
 
   import Container from "@/components/Container.vue";
   import Header from "@/components/Header.vue";
   import Footer from "@/components/Footer.vue";
-  import Projects from "./components/Projects.vue";
 
   import data from '@/assets/data/data.js';
 
@@ -22,6 +21,16 @@
   const headerData = data.header;
   const mainData = data.main;
   const projectsData = data.projects
+
+  const route = useRoute();
+  const currentData = computed(()=>{
+    if(route.name === 'home'){
+      return mainData;
+    }else if(route.name === 'projects'){
+      return projectsData;
+    }
+    return{};
+  }); 
 </script>
 
 <template>
@@ -29,8 +38,9 @@
     <Container>
       <Header :data="headerData" :lang="changedLang" @lang-change="langChange"></Header>
       
-      <Projects :data="projectsData" :lang="changedLang"/>
-      <!--<RouterView :data="mainData" :lang="changedLang"></RouterView>-->
+      <RouterView v-slot="{Component}">
+        <component :is="Component" :data="currentData" :lang="changedLang"></component>
+      </RouterView>
 
       <Footer></Footer>
     </Container>
