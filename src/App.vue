@@ -5,6 +5,7 @@
   import Container from "@/components/Container.vue";
   import Header from "@/components/Header.vue";
   import Footer from "@/components/Footer.vue";
+  import Projects from "./components/Projects.vue";
 
   import data from '@/assets/data/data.js';
 
@@ -20,6 +21,7 @@
 
   const headerData = data.header;
   const mainData = data.main;
+  const projectsData = data.projects
 </script>
 
 <template>
@@ -27,7 +29,8 @@
     <Container>
       <Header :data="headerData" :lang="changedLang" @lang-change="langChange"></Header>
       
-      <RouterView :data="mainData" :lang="changedLang"></RouterView>
+      <Projects :data="projectsData" :lang="changedLang"/>
+      <!--<RouterView :data="mainData" :lang="changedLang"></RouterView>-->
 
       <Footer></Footer>
     </Container>

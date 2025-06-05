@@ -5,7 +5,6 @@
     data: Object,
     lang: String
   });
-
 </script>
 
 <template>
