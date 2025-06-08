@@ -25,6 +25,15 @@ const data =
 
     projects: {
       titles: ['YouTube','ToDoList','RevealCards','ProfileCard','Pagination','FotoGallery','FormValidation','Calculator'],
+      links: ['https://aleksamlsvc12.github.io/Youtube/',
+              'https://aleksamlsvc12.github.io/To-Do-List/',
+              'https://aleksamlsvc12.github.io/Reveal-Cards/',
+              'https://aleksamlsvc12.github.io/Profile-Card/',
+              'https://aleksamlsvc12.github.io/Pagination/',
+              'https://aleksamlsvc12.github.io/Foto-Gallery/',
+              'https://aleksamlsvc12.github.io/Form-Validation/',
+              'https://aleksamlsvc12.github.io/Calculator/'
+      ],
       english: {
         YouTube: {
             difficulty: 'Intermediate',
