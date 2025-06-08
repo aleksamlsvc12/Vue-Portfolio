@@ -1,9 +1,17 @@
 <script setup>
   import { RouterLink } from 'vue-router';
-  const emit = defineEmits(['langChange']);
+  const emit = defineEmits(['langChange','themeChange']);
 
   function toggleTheme(){
-    document.documentElement.classList.toggle('dark');
+    if (localStorage.getItem('theme') === 'white') {
+      localStorage.setItem('theme','dark');
+      document.documentElement.classList.add('dark');
+    }else{
+      localStorage.setItem('theme','white');
+      document.documentElement.classList.remove('dark');
+    }
+
+    emit('themeChange', localStorage.getItem('theme'));
   }
 
   function saveLangInLS(){
@@ -18,7 +26,8 @@
 
   defineProps({
     data: Object,
-    lang: String
+    lang: String,
+    theme: String
   });
 </script>
 

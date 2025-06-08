@@ -1,5 +1,5 @@
 <script setup>
-  import { ref, computed } from "vue";
+  import { ref, computed, onMounted } from "vue";
   import {RouterView, useRoute} from 'vue-router';
 
   import Container from "@/components/Container.vue";
@@ -12,10 +12,27 @@
     localStorage.setItem('lang', 'english');
   }
 
-  let changedLang = ref(localStorage.getItem('lang'));
+  if(!localStorage.getItem('theme')) {
+    localStorage.setItem('theme', 'white');
+  }
+
+  onMounted(() => {
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  });
+
+  const changedLang = ref(localStorage.getItem('lang'));
+  const changedTheme = ref(localStorage.getItem('theme'))
 
   function langChange(lang){
     changedLang.value = lang;    
+  }
+
+  function themeChange(theme){
+    changedTheme.value = theme;    
   }
 
   const headerData = data.header;
@@ -36,10 +53,10 @@
 <template>
   <div class="h-screen p-12 bg-gray-300 select-none font-serif dark:bg-black transition-all duration-700">
     <Container>
-      <Header :data="headerData" :lang="changedLang" @lang-change="langChange"></Header>
+      <Header :data="headerData" :lang="changedLang" :theme="changedTheme" @lang-change="langChange" @theme-change="themeChange"></Header>
       
       <RouterView v-slot="{Component}">
-        <component :is="Component" :data="currentData" :lang="changedLang"></component>
+        <component :is="Component" :data="currentData" :lang="changedLang" :theme="changedTheme"></component>
       </RouterView>
 
       <Footer></Footer>
