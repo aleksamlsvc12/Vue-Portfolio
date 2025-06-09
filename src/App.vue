@@ -38,6 +38,7 @@
   const headerData = data.header;
   const mainData = data.main;
   const projectsData = data.projects;
+  const aboutData = data.about;
 
   const route = useRoute();
   const currentData = computed(()=>{
@@ -45,6 +46,9 @@
       return mainData;
     }else if(route.name === 'projects'){
       return projectsData;
+    }
+    else if(route.name === 'about'){
+      return aboutData;
     }
     return{};
   }); 
