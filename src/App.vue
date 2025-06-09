@@ -38,7 +38,7 @@
   const headerData = data.header;
   const mainData = data.main;
   const projectsData = data.projects;
-  const aboutData = data.about;
+  const aboutData = data;
 
   const route = useRoute();
   const currentData = computed(()=>{

@@ -136,24 +136,59 @@ const data =
     },
 
     about: {
-      progress: {},
       english: {
-        about: {
           header: 'ABOUT',
           p1: 'Hi, my name is Aleksa Milosevic. I was born in 2004 and Im from Mladenovac, a city near Belgrade, Serbia.',
           p2: 'Im passionate about web development, especially frontend technologies like HTML, CSS, and JavaScript. I enjoy creating clean, user-friendly interfaces and constantly improving my skills through personal projects and continuous learning.',
           p3: 'Aside from programming, Im an active member of the Academic Cultural and Artistic Society “Branko Krsmanović” and have experience working with children. Im responsible, adaptable, and highly motivated by problem-solving and achieving meaningful goals.'
-        }
       },
       serbian: {
-        about: {
           header: 'O MENI',
           p1: 'Zdravo, moje ime je Aleksa Milošević. Rođen sam 2004. godine i dolazim iz Mladenovca, grada blizu Beograda, Srbija.',
           p2: 'Strastven sam u vezi za web razvojem, posebno sa frontend tehnologijama poput HTML-a, CSS-a i JavaScript-a. Uživam u kreiranju čistih, korisnički prijateljskih interfejsa i stalnom unapređivanju svojih veština kroz lične projekte i kontinuirano učenje.',
           p3: 'Pored programiranja, aktivan sam član Akademskog kulturno-umetničkog društva „Branko Krsmanović“ i imam iskustva u radu sa decom. Odgovoran sam, prilagodljiv i jako motivisan rešavanjem problema i postizanjem značajnih ciljeva.'
-        }
       }
+    },
+
+    education: {
+      english: {
+          header: 'EDUCATION',
+          school1: 'SCHOOL OF ELECTRICAL AND COMPUTER ENGINEERING',
+          desc1: 'Computer Engineering | Belgrade | 2022 - present',
+          school2: 'TECHNICAL SCHOOL MLADENOVAC',
+          desc2: 'Electrical Technician in Information Technology | Mladenovac | 2018 - 2022'
+        },
+      
+      serbian: {
+          header: 'OBRAZOVANJE',
+          school1: 'VISOKA SKOLA ELEKTROTEHNIKE I RACUNARSTVA',
+          desc1: 'Racunarska tehnika | Beograd | 2022 - trenutno',
+          school2: 'TEHNICKA SKOLA MLADENOVAC',
+          desc2: 'Elektrotehnicar informacionih tehnologija | Mladenovac | 2018 - 2022'
+        },
+    },
+
+    skills:{
+      progress: {
+        web: '70%',
+        git: '60%',
+        sql: '60%'
+      },
+      english: {
+          header: 'SKILLS',
+          text1: 'Web Core Technologies',
+          text2: 'Version Control',
+          text3: 'Databases'
+        },
+      
+      serbian: {
+          header: 'VESTINE',
+          text1: 'Osnovne web tehnologije',
+          text2: 'Kontrolja verzija',
+          text3: 'Baze podataka'
+        },
     }
+
   };
 
 
