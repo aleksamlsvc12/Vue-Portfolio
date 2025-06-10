@@ -151,6 +151,7 @@ const data =
     },
 
     education: {
+      links: ['https://www.viser.edu.rs/', 'https://tehnickaskola.edu.rs/'],
       english: {
           header: 'EDUCATION',
           school1: 'SCHOOL OF ELECTRICAL AND COMPUTER ENGINEERING',
@@ -161,17 +162,17 @@ const data =
       
       serbian: {
           header: 'OBRAZOVANJE',
-          school1: 'VISOKA SKOLA ELEKTROTEHNIKE I RACUNARSTVA',
-          desc1: 'Racunarska tehnika | Beograd | 2022 - trenutno',
-          school2: 'TEHNICKA SKOLA MLADENOVAC',
-          desc2: 'Elektrotehnicar informacionih tehnologija | Mladenovac | 2018 - 2022'
+          school1: 'VISOKA ŠKOLA ELEKTROTEHNIKE I RAČUNARSTVA',
+          desc1: 'Računarska tehnika | Beograd | 2022 - trenutno',
+          school2: 'TEHNIČKA ŠKOLA MLADENOVAC',
+          desc2: 'Elektrotehničar informacionih tehnologija | Mladenovac | 2018 - 2022'
         },
     },
 
     skills:{
       progress: {
-        web: '70%',
-        git: '60%',
+        web: '80%',
+        git: '80%',
         sql: '60%'
       },
       english: {
@@ -183,8 +184,8 @@ const data =
       
       serbian: {
           header: 'VESTINE',
-          text1: 'Osnovne web tehnologije',
-          text2: 'Kontrolja verzija',
+          text1: 'Osnovne web tehnologija',
+          text2: 'Kontrola verzija',
           text3: 'Baze podataka'
         },
     }
