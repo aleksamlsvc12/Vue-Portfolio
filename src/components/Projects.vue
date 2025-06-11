@@ -10,7 +10,7 @@
 </script>
 
 <template>
-  <div class="flex-grow p-8 grid grid-cols-4 gap-16 place-items-center">
+  <div class="flex-grow p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-16 place-items-center">
     <div class="shadow-md rounded-[60px] shadow-gray-400 p-12 hover:scale-95 transition-all overflow-hidden cursor-pointer flex flex-col justify-center items-start w-full animate-[appear_1s_ease-in-out]" 
       v-for="(title, index) in data.titles" :key="index" @click="openLink(data.links[index])">
       <p class="mb-10 font-bold dark:text-white">{{title}}</p>

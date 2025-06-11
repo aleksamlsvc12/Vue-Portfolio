@@ -32,12 +32,12 @@
 </script>
 
 <template>
-    <div class="h-1/6 flex justify-between items-center ml-8 mr-8 transition-all duration-700">
-      <div>
-        <p class="font-bold text-3xl dark:text-white">Aleksa Milošević.</p>
+    <div class="h-1/6 flex md:justify-between items-center ml-8 mr-8 transition-all duration-700 flex-col  md:flex-row">
+      <div class="mb-4 md:mb-0">
+        <p class="font-bold text-xl md:text-3xl dark:text-white text-center">Aleksa Milošević.</p>
       </div>
       
-      <div class="flex font-semibold text-sm items-center gap-6 dark:text-white">
+      <div class="flex font-semibold text-xs md:text-sm items-center gap-2 md:gap-6 dark:text-white">
         <RouterLink v-for="(page, index) in data[lang]" :key="index" :to="data.links[index]">
           <p class="hover:underline underline-offset-2 decoration-[2px]">{{page}}</p>
         </RouterLink>
