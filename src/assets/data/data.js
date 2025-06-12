@@ -13,8 +13,8 @@ const data =
       },
 
     description: {
-      english: 'I am a final year student of the School of Electrical and Computer Engineering,<span class="block">majoring in Computer Engineering.</span>',
-      serbian: 'Ja sam student završne godine Visoke škole elektrotehnike i računarstva,<span class="block">smer Računarska tehnika.</span>'
+      english: 'I am a final year student of the School of Electrical and Computer Engineering, majoring in Computer Engineering.',
+      serbian: 'Ja sam student završne godine Visoke škole elektrotehnike i računarstva, smer Računarska tehnika.'
     },
 
     button: {

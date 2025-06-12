@@ -55,7 +55,7 @@
 </script>
 
 <template>
-  <div class="h-screen p-12 bg-gray-300 select-none font-serif dark:bg-black transition-all duration-700">
+  <div class="h-screen p-12 bg-gray-300 select-none font-serif dark:bg-black transition-all duration-700 min-w-[320px]">
     <Container>
       <Header :data="headerData" :lang="changedLang" :theme="changedTheme" @lang-change="langChange" @theme-change="themeChange"></Header>
       
