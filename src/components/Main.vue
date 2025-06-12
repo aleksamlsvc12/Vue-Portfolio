@@ -19,7 +19,7 @@
 </script>
 
 <template>
-    <div class="flex-grow p-0 lg:p-8 flex justify-around items-center transition-all duration-700 flex-col-reverse md:flex-row ">
+    <div class="flex-grow p-0 lg:p-8 flex justify-around items-center transition-all duration-700 flex-col-reverse md:flex-row">
       <div class="w-full flex flex-col animate-[slideLeftToRight_1s_ease-in-out] items-center md:items-start">
         <div class="w-fit">
           <p class="mb-1 font-extrabold text-xs md:text-xl lg:text-2xl dark:text-white whitespace-nowrap" v-html="data.title[lang]"></p>

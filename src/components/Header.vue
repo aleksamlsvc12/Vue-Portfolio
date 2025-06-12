@@ -32,7 +32,7 @@
 </script>
 
 <template>
-    <div class="h-1/6 flex md:justify-between items-center ml-0 mr-0 lg:ml-8 lg:mr-8 transition-all duration-700 flex-col  md:flex-row">
+    <div class="h-1/6 flex md:justify-between items-center ml-0 mr-0 lg:ml-8 lg:mr-8 transition-all duration-700 flex-col  md:flex-row flex-shrink-0">
       <div class="mb-4 md:mb-0">
         <p class="font-bold text-xl md:text-3xl dark:text-white text-center">Aleksa Milošević.</p>
       </div>

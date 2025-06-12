@@ -10,25 +10,25 @@
 </script>
 
 <template>
-  <div class="flex-grow p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-16 place-items-center">
-    <div class="shadow-md rounded-[60px] shadow-gray-400 p-12 hover:scale-95 transition-all overflow-hidden cursor-pointer flex flex-col justify-center items-start w-full animate-[appear_1s_ease-in-out]" 
+  <div class="flex-grow p-8 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+    <div class="rounded-full shadow-md sm:rounded-[60px] shadow-gray-400 p-6 sm:p-10 w-full items-center sm:items-start hover:scale-95 transition-all overflow-hidden cursor-pointer flex flex-col animate-[appear_1s_ease-in-out]" 
       v-for="(title, index) in data.titles" :key="index" @click="openLink(data.links[index])">
-      <p class="mb-10 font-bold dark:text-white">{{title}}</p>
-      <div class="flex justify-between w-full">
+      <p class="font-bold dark:text-white mb-4 text-sm md:text-lg">{{title}}</p>
+      <div class="flex justify-between w-full sm:flex-row flex-col items-center gap-y-2">
         <span 
-        :class="['text-sm text-white rounded-md w-32 h-8 flex justify-center items-center',
+        :class="['text-xs text-white rounded-md w-24 sm:w-40 h-8 p-2 flex justify-center items-center',
         data[lang][title].difficulty === 'Beginner' || data[lang][title].difficulty === 'Početni nivo' ? 'beginner-button' : '',
         data[lang][title].difficulty === 'Intermediate' || data[lang][title].difficulty === 'Srednji nivo' ? 'intermediate-button' : '',
         data[lang][title].difficulty === 'Advanced' || data[lang][title].difficulty === 'Napredni nivo' ? 'advanced-button' : ''
         ]">{{data[lang][title].difficulty}}</span>
 
         <span 
-        :class="['text-sm text-white rounded-md w-32 h-8 flex justify-center items-center ml-2 mr-2',
+        :class="['text-xs text-white rounded-md w-24 sm:w-32 h-8 p-2 flex justify-center items-center ml-2 mr-2',
         data[lang][title].completion === 'Completed' || data[lang][title].completion === 'Završeno' ? 'completed-button' : ''
         ]">{{data[lang][title].completion}}</span>
 
         <span
-        :class="['text-sm text-white rounded-md w-24 h-8 flex justify-center items-center',
+        :class="['text-xs text-white rounded-md w-24 sm:w-32 h-8 p-2 flex justify-center items-center',
         data[lang][title].date !== '' ? 'date-button' : ''
         ]">{{data[lang][title].date}}</span>
       </div>
