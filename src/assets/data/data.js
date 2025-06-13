@@ -183,7 +183,7 @@ const data =
         },
       
       serbian: {
-          header: 'VESTINE',
+          header: 'VEŠTINE',
           text1: 'Osnovne web tehnologija',
           text2: 'Kontrola verzija',
           text3: 'Baze podataka'

@@ -37,7 +37,7 @@
         <p class="font-bold text-xl md:text-3xl dark:text-white text-center">Aleksa Milošević.</p>
       </div>
       
-      <div class="flex font-semibold text-xs md:text-sm items-center gap-2 md:gap-6 dark:text-white">
+      <div class="flex font-semibold text-xs md:text-sm items-center gap-4 md:gap-6 dark:text-white">
         <RouterLink v-for="(page, index) in data[lang]" :key="index" :to="data.links[index]">
           <p class="hover:underline underline-offset-2 decoration-[2px]">{{page}}</p>
         </RouterLink>
