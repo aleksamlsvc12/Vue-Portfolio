@@ -18,7 +18,7 @@ function openLink(url) {
         class="flex-grow flex justify-around items-center flex-col lg:flex-row lg:gap-y-0 gap-y-6 h-full lg:mt-0 lg:mb-0"
       >
         <div
-          class="w-[90%] lg:w-1/4 md:w-1/3 h-[460px] shadow-md shadow-gray-400 rounded-3xl flex flex-col p-6 gap-4 animate-[topSlide_1s_ease-in-out]"
+          class="w-[90%] lg:w-1/4 md:w-1/3 md:h-[460px] h-auto shadow-md shadow-gray-400 rounded-3xl flex flex-col p-6 gap-4 animate-[topSlide_1s_ease-in-out]"
         >
           <p class="xl:text-xl text-md font-bold text-center dark:text-white">
             {{ data.about[lang].header }}
