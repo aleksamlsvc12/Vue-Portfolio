@@ -34,6 +34,6 @@ npm run dev
 
 If you want to talk, reach out at:  
 [Email](mailto:[aleksamlsvc12@gmail.com)  
-[LinkedIn](www.linkedin.com/in/aleksamlsvc12)
+[LinkedIn](https://linkedin.com/in/aleksamlsvc12)
 
 ---
