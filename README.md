@@ -33,7 +33,7 @@ npm run dev
 ## Contact
 
 If you want to talk, reach out at:  
-[Email](mailto:[aleksamlsvc12@gmail.com)  
+[Email](mailto:aleksamlsvc12@gmail.com)  
 [LinkedIn](https://linkedin.com/in/aleksamlsvc12)
 
 ---
