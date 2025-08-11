@@ -56,9 +56,9 @@ const data =
         Calculator: { difficulty: 'Beginner', completion: 'Completed', date: '10/24/2024' }
       },
       serbian: {
-        TravelOrder: { difficulty: 'Napredni nivo', completion: 'Završeno', date: '27/6/2025' },
-        VueJobs: { difficulty: 'Napredni nivo', completion: 'Završeno', date: '21/5/2025' },
-        Profiles: { difficulty: 'Napredni nivo', completion: 'Završeno', date: '4/8/2025' },
+        TravelOrder: { difficulty: 'Viši nivo', completion: 'Završeno', date: '27/6/2025' },
+        VueJobs: { difficulty: 'Viši nivo', completion: 'Završeno', date: '21/5/2025' },
+        Profiles: { difficulty: 'Viši nivo', completion: 'Završeno', date: '4/8/2025' },
         ToDoList: { difficulty: 'Srednji nivo', completion: 'Završeno', date: '4/4/2025' },
         Pagination: { difficulty: 'Srednji nivo', completion: 'Završeno', date: '8/4/2025' },
         FormValidation: { difficulty: 'Srednji nivo', completion: 'Završeno', date: '2/4/2025' },

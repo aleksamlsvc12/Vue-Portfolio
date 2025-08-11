@@ -20,7 +20,7 @@
           :class="['text-xs text-white rounded-md w-24 sm:w-40 h-8 p-2 flex justify-center items-center',
           data[lang][title].difficulty === 'Beginner' || data[lang][title].difficulty === 'Početni nivo' ? 'beginner-button' : '',
           data[lang][title].difficulty === 'Intermediate' || data[lang][title].difficulty === 'Srednji nivo' ? 'intermediate-button' : '',
-          data[lang][title].difficulty === 'Advanced' || data[lang][title].difficulty === 'Napredni nivo' ? 'advanced-button' : ''
+          data[lang][title].difficulty === 'Advanced' || data[lang][title].difficulty === 'Viši nivo' ? 'advanced-button' : ''
           ]">{{data[lang][title].difficulty}}</span>
 
           <span 
