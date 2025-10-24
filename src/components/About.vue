@@ -18,58 +18,69 @@ function openLink(url) {
         class="flex-grow flex justify-around items-center flex-col lg:flex-row lg:gap-y-0 gap-y-6 h-full lg:mt-0 lg:mb-0"
       >
         <div
-          class="w-[90%] lg:w-1/4 md:w-1/3 md:h-[460px] h-auto shadow-md shadow-gray-400 rounded-3xl flex flex-col p-6 gap-4 animate-[topSlide_1s_ease-in-out]"
+          class="w-[90%] lg:w-1/4 md:w-1/3 md:h-[460px] h-auto shadow-md shadow-gray-400 rounded-3xl flex flex-col justify-center p-6 gap-10 animate-[topSlide_1s_ease-in-out]"
         >
-          <p class="xl:text-xl text-md font-bold text-center dark:text-white">
-            {{ data.about[lang].header }}
-          </p>
-          <p class="xl:text-sm text-xs text-gray-500 text-justify">
-            {{ data.about[lang].p1 }}
-          </p>
-          <p class="xl:text-sm text-xs text-gray-500 text-justify">
-            {{ data.about[lang].p2 }}
-          </p>
-          <p class="xl:text-sm text-xs text-gray-500 text-justify">
-            {{ data.about[lang].p3 }}
-          </p>
-        </div>
-
-        <div
-          class="w-[90%] lg:w-1/4 md:w-1/3 h-[460px] shadow-md shadow-gray-400 rounded-3xl flex flex-col p-6 justify-around gap-4 animate-[topSlide_1.5s_ease-in-out]"
-        >
-          <p class="xl:text-xl text-md font-bold text-center dark:text-white">
-            {{ data.education[lang].header }}
-          </p>
-
-          <div class="w-full text-center">
-            <span
-              class="font-bold xl:text-lg text-md text-purple-700 cursor-pointer"
-              @click="openLink(data.education.links[0])"
-              >{{ data.education[lang].school1 }}</span
-            >
-            <p class="xl:text-sm text-xs text-gray-500">
-              {{ data.education[lang].desc1 }}
+          <div>
+            <p class="xl:text-xl text-md font-bold text-center dark:text-white">
+              {{ data.about[lang].header }}
             </p>
           </div>
 
-          <div class="w-full text-center">
-            <span
-              class="font-bold xl:text-lg text-md text-purple-700 cursor-pointer"
-              @click="openLink(data.education.links[1])"
-              >{{ data.education[lang].school2 }}</span
-            >
-            <p class="xl:text-sm text-xs text-gray-500">
-              {{ data.education[lang].desc2 }}
+          <div>
+            <p class="xl:text-sm text-xs text-gray-500 text-justify">
+              {{ data.about[lang].p1 }}
+            </p>
+            <p class="xl:text-sm text-xs text-gray-500 text-justify">
+              {{ data.about[lang].p2 }}
+            </p>
+            <p class="xl:text-sm text-xs text-gray-500 text-justify">
+              {{ data.about[lang].p3 }}
             </p>
           </div>
         </div>
 
         <div
-          class="w-[90%] lg:w-1/4 md:w-1/3 h-[460px] shadow-md shadow-gray-400 rounded-3xl flex flex-col p-6 justify-around gap-4 animate-[topSlide_2s_ease-in-out]"
+          class="w-[90%] lg:w-1/4 md:w-1/3 h-[460px] shadow-md shadow-gray-400 rounded-3xl flex flex-col p-6 justify-center gap-10 animate-[topSlide_1.5s_ease-in-out]"
         >
-          <p class="xl:text-xl text-md font-bold text-center dark:text-white">
-            {{ data.skills[lang].header }}
-          </p>
+          <div>
+            <p class="xl:text-xl text-md font-bold text-center dark:text-white">
+              {{ data.education[lang].header }}
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-8">
+            <div class="w-full text-center">
+              <span
+                class="font-bold xl:text-lg text-md text-purple-700 cursor-pointer"
+                @click="openLink(data.education.links[0])"
+                >{{ data.education[lang].school1 }}</span
+              >
+              <p class="xl:text-sm text-xs text-gray-500">
+                {{ data.education[lang].desc1 }}
+              </p>
+            </div>
+
+            <div class="w-full text-center">
+              <span
+                class="font-bold xl:text-lg text-md text-purple-700 cursor-pointer"
+                @click="openLink(data.education.links[1])"
+                >{{ data.education[lang].school2 }}</span
+              >
+              <p class="xl:text-sm text-xs text-gray-500">
+                {{ data.education[lang].desc2 }}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="w-[90%] lg:w-1/4 md:w-1/3 h-[460px] shadow-md shadow-gray-400 rounded-3xl flex flex-col p-6 justify-center gap-10 animate-[topSlide_2s_ease-in-out]"
+        >
+          <div>
+            <p class="xl:text-xl text-md font-bold text-center dark:text-white">
+              {{ data.skills[lang].header }}
+            </p>
+          </div>
 
           <div class="flex flex-col justify-around h-[80%]">
             <div class="w-full text-center">
