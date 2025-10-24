@@ -15,21 +15,6 @@ Built with:
 - CSS3 (Tailwind)  
 - JavaScript (Vue)  
 
-## How to Run Locally
-
-1. Clone this repo:
-
-```
-git clone https://github.com/aleksamlsvc12/Vue-Portfolio.git
-```
-
-2. Enter the project folder and run:
-
-```
-npm ci
-npm run dev
-```
-
 ## Contact
 
 If you want to talk, reach out at:  
